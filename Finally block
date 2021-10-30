@@ -1,0 +1,19 @@
+class TestFinallyBlock
+{
+ public static void main(String args[])
+{
+  try{
+      int a=25/0;
+      System.out.println("val of a is"+a);
+      }
+  catch(NullPointerException e)
+    {
+      System.out.println("Null");
+    }
+  finally
+   {
+    System.out.println("finally block");
+   }
+  System.out.println("rest of prog");
+ }
+}
